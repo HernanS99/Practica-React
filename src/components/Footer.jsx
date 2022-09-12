@@ -2,8 +2,6 @@ import React from 'react';
 import {
   MDBFooter,
   MDBContainer,
-  MDBCol,
-  MDBRow,
   MDBIcon,
   MDBBtn
 } from 'mdb-react-ui-kit';
@@ -19,7 +17,7 @@ export default function App() {
             link
             floating
             size="lg"
-            className='text-dark m-1'
+            className='text-dark m-1 btn-secondary'
             href='#!'
             role='button'
           >
@@ -31,7 +29,7 @@ export default function App() {
             link
             floating
             size="lg"
-            className='text-dark m-1'
+            className='text-dark m-1 btn-secondary'
             href='#!'
             role='button'
           >
@@ -43,7 +41,7 @@ export default function App() {
             link
             floating
             size="lg"
-            className='text-dark m-1'
+            className='text-dark m-1 btn-secondary'
             href='#!'
             role='button'
           >
@@ -55,7 +53,7 @@ export default function App() {
             link
             floating
             size="lg"
-            className='text-dark m-1'
+            className='text-dark m-1 btn-secondary'
             href='#!'
             role='button'
           >
@@ -67,7 +65,7 @@ export default function App() {
             link
             floating
             size="lg"
-            className='text-dark m-1'
+            className='text-dark m-1 btn-secondary'
             href='#!'
             role='button'
           >
@@ -79,7 +77,7 @@ export default function App() {
             link
             floating
             size="lg"
-            className='text-dark m-1'
+            className='text-dark m-1 btn-secondary'
             href='#!'
             role='button'
           >
@@ -90,8 +88,8 @@ export default function App() {
 
       <div className='text-center text-dark p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
         © 2020 Copyright:
-        <a className='text-dark' href='https://mdbootstrap.com/'>
-          MDBootstrap.com
+        <a className='text-dark' href='#!'>
+          Hernán Silva
         </a>
       </div>
     </MDBFooter>
