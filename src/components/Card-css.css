@@ -1,30 +1,3 @@
-/* html *{
-    padding: 0;
-    margin: 0;
-}
-
-.container{
-    width: 100%;
-}
-
-nav {
-    background-color: #ccc;
-    display: flex;
-    justify-content: space-between;
-}
-
-nav ul{
-    display: flex;
-}
-
-nav li{
-    list-style-type: none;
-}
-
-nav img {
-    height: 85px;
-} */
-
 a {
     text-decoration: none;
 }

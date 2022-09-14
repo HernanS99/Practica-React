@@ -1,26 +1,28 @@
-function Card (){
+/* import '.' */
+
+function Card (props){
     return (
         <div>
-            <div class="container" style="margin-top:50px;">
+            <div class="container">
                 <div class="row">
                     <div class="col-md-3">
                         <div class="card-sl">
                             <div class="card-image">
                                 <img
-                                    src="https://images.pexels.com/photos/1149831/pexels-photo-1149831.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+                                    src="https://images.pexels.com/photos/1149831/pexels-photo-1149831.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt='foto'/>
                             </div>
 
-                            <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
+                            {/* <a class="card-action" href="#!"><i class="fa fa-heart"></i></a> */}
                             <div class="card-heading">
-                                Audi Q8
+                                {props.datos.titulo}
                             </div>
                             <div class="card-text">
-                                Audi Q8 is a full-size luxury crossover SUV coupé made by Audi that was launched in 2018.
+                                {props.datos.descripcion}
                             </div>
                             <div class="card-text">
                                 $67,400
-                            </div>
-                            <a href="#" class="card-button"> Purchase</a>
+                            </div>{/* 
+                            <a href="#!" class="card-button"> Purchase</a> */}
                         </div>
                     </div>
                 </div>
@@ -28,3 +30,5 @@ function Card (){
         </div>
     )
 }
+
+export default Card
