@@ -20,7 +20,7 @@ const Catalogue = () => {
                     <p className="fs-1 fw-bold text-center">Catalogo</p>
                 </div>
             </div>
-            <div className="row">
+            <div className="row mb-5">
                 {productos.map(producto=><Card datos={producto}/>)}
                 
             </div>
