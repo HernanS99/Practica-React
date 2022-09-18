@@ -16,7 +16,8 @@ const Catalogue = () => {
     useEffect(()=>{
         getFromA()
     },)
-
+    
+    
 
     return (
         <div className="container">
