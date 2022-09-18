@@ -27,9 +27,6 @@ const Login = () => {
         localStorage.setItem("usuarios", JSON.stringify(usuarios));
     }
 
-    
-
-   
     function getUsers() {
         let listusers = localStorage.getItem('usuarios')
         usuarios = !listusers ? [] : JSON.parse(listusers);
