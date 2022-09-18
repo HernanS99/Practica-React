@@ -1,6 +1,7 @@
 /* import '.' */
 
 function Card(props) {
+    console.log(props)
     return (
             <div class="col-md-3">
                 <div class="card-sl">
@@ -11,10 +12,10 @@ function Card(props) {
 
                     {/* <a class="card-action" href="#!"><i class="fa fa-heart"></i></a> */}
                     <div class="card-heading">
-                        {props.datos.titulo}
+                        {props.datos.name}
                     </div>
-                    <div class="card-text">
-                        {props.datos.descripcion}
+                    <div class="card-text">{/* 
+                        {props.datos.descripcion} */}
                     </div>
                     <div class="card-text">
                         $67,400

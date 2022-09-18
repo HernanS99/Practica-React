@@ -1,17 +1,22 @@
 import Card from "./Card"
+import axios from 'axios';
+import { useState } from "react";
+import { useEffect } from "react";
 
 const Catalogue = () => {
+    const [poke, setPoke] = useState([])
+    
 
-    let productos = [
-        {
-            titulo : 'Computador',
-            descripcion : '1 tb sdd, 20gb ram'
-        },
-        {
-            titulo : 'Grafica',
-            descripcion : 'rtx 3060'
-        }
-    ]
+
+    const getFromA = async () => {
+        let resp = await axios.get('https://pokeapi.co/api/v2/pokemon?limit=10&offset=0')
+        setPoke(resp.data.results)
+    }
+
+    useEffect(()=>{
+        getFromA()
+    },[])
+
 
     return (
         <div className="container">
@@ -21,11 +26,12 @@ const Catalogue = () => {
                 </div>
             </div>
             <div className="row mb-5">
-                {productos.map(producto=><Card datos={producto}/>)}
-                
+             { poke.map(producto=><Card datos={producto} key={producto.name}/>) } 
             </div>
         </div>
     )
+
+
 }
 
 export default Catalogue
