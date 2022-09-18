@@ -1,4 +1,17 @@
+import { useState } from "react"
+
 const Login = () => {
+
+    const [user, setUser] = useState({})
+
+    const handleInput = (evento) => {
+        const {value, name} = evento.target
+        setUser({
+            ...user,
+            [name]: value
+        })
+    }
+    console.log(user)
     return (
         <section class="vh-100 gradient-custom">
             <div class="container py-5 h-100">
@@ -13,12 +26,14 @@ const Login = () => {
                                     <p class="text-white-50 mb-5">Please enter your login and password!</p>
 
                                     <div class="form-outline form-white mb-4">
-                                        <input type="email" id="typeEmailX" class="form-control form-control-lg" />
+                                        <input type="email" id="typeEmailX" name="Correo" class="form-control form-control-lg"
+                                            onChange={(evento) => handleInput(evento)}
+                                        />
                                         <label class="form-label" for="typeEmailX">Email</label>
                                     </div>
 
                                     <div class="form-outline form-white mb-4">
-                                        <input type="password" id="typePasswordX" class="form-control form-control-lg" />
+                                        <input type="password" id="typePasswordX" name="password" class="form-control form-control-lg" onChange={(evento) => handleInput(evento)} />
                                         <label class="form-label" for="typePasswordX">Password</label>
                                     </div>
 

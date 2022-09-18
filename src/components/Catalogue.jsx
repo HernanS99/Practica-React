@@ -15,7 +15,7 @@ const Catalogue = () => {
 
     useEffect(()=>{
         getFromA()
-    },[])
+    },)
 
 
     return (
