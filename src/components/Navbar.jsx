@@ -13,6 +13,7 @@ function NavMax() {
                             navbarScroll
                         >
                             <Nav.Link href="/">Inicio</Nav.Link>
+                            <Nav.Link href="/Login">Login</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
