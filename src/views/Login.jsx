@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { auth, signInWithEmailAndPassword, signInWithGoogle, logInWithEmailAndPassword } from "../firebase";
 
 const Login = () => {
 
@@ -60,7 +61,7 @@ const Login = () => {
                                             <label class="form-label" for="typePasswordX">Contraseña</label>
                                         </div>
 
-                                        <button class="btn btn-outline-light btn-lg px-5" type="submit" onClick={validateUser}>Login</button>
+                                        <button class="btn btn-outline-light btn-lg px-5" type="submit" onClick={() => logInWithEmailAndPassword(user.email, user.password)}>Login</button>
 
                                     </div>
 
