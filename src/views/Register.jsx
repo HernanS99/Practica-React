@@ -78,7 +78,7 @@ const Register = () => {
                                 </div>
 
                                 <div>
-                                    <p class="mb-0">ya tienes una cuenta? <a href="#!" class="text-white-50 fw-bold">Inicia sesion</a>
+                                    <p class="mb-0">ya tienes una cuenta? <a href="./Login" class="text-white-50 fw-bold">Inicia sesion</a>
                                     </p>
                                 </div>
 
